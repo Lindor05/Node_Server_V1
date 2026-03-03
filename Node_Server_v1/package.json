@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Cours 1 node js Api Rest",
   "main": "server.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js"
@@ -19,5 +20,10 @@
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^3.1.11"
+  },
+  "dependencies": {
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "mongoose": "^9.2.2"
   }
 }
