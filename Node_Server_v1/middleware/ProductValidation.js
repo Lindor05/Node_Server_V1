@@ -1,4 +1,4 @@
-import {body, validator} from 'express-validator';
+import {body} from 'express-validator';
 
 export const validateProduct = (req,res,next)=>{
     const {name,price} = req.body;

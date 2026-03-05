@@ -19,10 +19,11 @@ export const saveProduct = async (req,res)=>{
     }    
 }
 
-    export const addProduct = async (req,res)=>{
+    export const addProduct = async (req,res)=>{console.log(req.file);
         const newProduct = new ProductModel({
             name:req.body.name,
-            price:req.body.price
+            price:req.body.price,
+            image:req.file.path
         });
         await newProduct.save()
             .then(()=>{
